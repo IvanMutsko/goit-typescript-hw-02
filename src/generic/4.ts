@@ -6,7 +6,7 @@ interface Props {
   title: string;
 }
 
-class Component<T extends Props> {
+class Component<T> {
   constructor(public props: T) {}
 }
 
@@ -15,7 +15,5 @@ class Page extends Component<Props> {
     console.log(this.props.title);
   }
 }
-
-export {};
 
 export {};
